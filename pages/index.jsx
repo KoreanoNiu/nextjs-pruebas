@@ -1,3 +1,5 @@
+import  Typist from 'react-typist';
+
 const index = () =>
 <div>
     <div className='main'>
@@ -5,7 +7,9 @@ const index = () =>
         <div className='main__container'>
             <div className='container__textWrapper'>
                 <h1>
-                    Hola <span className='highlight'>Quality Software</span>
+                    <Typist cursor={{show: false}}>
+                            Hola <span className='highlight'>Quality Software</span>
+                    </Typist>
                 </h1>
             </div>
         </div>
