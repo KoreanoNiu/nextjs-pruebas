@@ -1,4 +1,4 @@
-$background-color: #FDFDFD;
+$background-color: #F4F5F6;
 
 html {
   -webkit-box-sizing: border-box;
@@ -12,37 +12,36 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   scroll-behavior:smooth;
-  font-family: 'BR Firma';
 }
 
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-    scroll-behavior:smooth;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: optimizeSpeed;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  scroll-behavior:smooth;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimizeSpeed; 
 }
 
 body {
-margin: 0;
-padding: 0;
-background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
 }
 
 $offcanvas-bar-background:                      $background-color;
 $offcanvas-bar-color-mode:                      dark;
 
-@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/variables-theme.scss";  
 @import "uikit/src/scss/mixins-theme.scss";
 
 //@import "./mixins.scss";
 
-@import './fonts.scss';
+//@import './fonts.scss';
 
 @import "uikit/src/scss/uikit-theme.scss";
 
-h1{
-  font-family: 'BR Firma'
-}
+@import './test.scss';
