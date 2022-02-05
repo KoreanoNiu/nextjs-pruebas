@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-const uikit = require("uikit/dist/js/uikit.min");
+const uikit = require("uikit");
 const icons = require("uikit/dist/js/uikit-icons.min");
 
-class UIKit extends Component {
+export default class UIKit extends Component {
   state = { ready: false };
   componentDidMount = () => {
     if (typeof window !== "undefined") {
@@ -16,5 +16,3 @@ class UIKit extends Component {
     return <div>{this.props.children}</div>;
   }
 }
-
-export default UIKit;
