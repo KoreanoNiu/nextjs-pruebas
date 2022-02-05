@@ -15,7 +15,7 @@ const index = () =>
     </div>
     <div className='uk-section'>
         <div className='uk-container-xlarge uk-align-center'>
-            <div className="uk-child-width-1-3@m uk-grid-small uk-grid-match" data-uk-grid>
+            <div className="uk-child-width-1-3@m uk-grid-medium uk-grid-match" data-uk-grid>
                 <div>
                     <div className="uk-card uk-card-default uk-card-body">
                         <h3 className="uk-card-title">Default</h3>
