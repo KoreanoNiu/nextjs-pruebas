@@ -1,6 +1,6 @@
 import '../styles/uikit.scss';
 import dynamic from 'next/dynamic';
-const UIKit = dynamic(() => import('../components/Uikit'), { logger: <p>...</p>});
+const UIKit = dynamic(() => import('../components/Uikit'), { loading: <p>...</p>});
 
 function App({ Component, pageProps }) {
     return (
