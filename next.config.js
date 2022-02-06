@@ -10,6 +10,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 const conf = {
     webpack5: true,
+    swcMinify: true,
     reactStrictMode: true,
     devtool: 'source-map',
     compress: true,
@@ -25,11 +26,9 @@ const conf = {
           chunks: "all",
           cacheGroups: {
             vendors: {
-              // node_ Code in modules
               test: /[\\/]node_modules[\\/]/,
               chunks: "all",
-              //Name: 'vendors', do not define a fixed name
-              Priority: 10, // priority
+              Priority: 10,
               enforce: true,
             },
           }
